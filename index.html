@@ -3,30 +3,37 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"  />
         <title>ChatApp</title>
 
         <link rel="stylesheet" href="css/style.css" />
-        <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+        <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
     </head>
     <body>
         <div class="header">
             <div class="container">
-                <div class="flex-box">
+                <nav class="navbar">
+                    <input type="checkbox" id="nav-toggle" />
                     <div class="logo">
                         <a href="#" class="logo__link">
                             <img src="img/logo-header.svg" alt="Logo" />
                         </a>
                     </div>
 
-                    <nav class="navbar">
-                        <a href="#" class="navbar__link">Product</a>
-                        <a href="#" class="navbar__link">Service</a>
-                        <a href="#" class="navbar__link">Contact</a>
-                        <a href="#" class="navbar__link">Sign In</a>
-                        <a href="#" class="navbar__btn">Try it Free</a>
-                    </nav>
-                </div>
+                    <ul class="navbar__links">
+                        <li><a href="#" class="navbar__link">Product</a></li>
+                        <li><a href="#" class="navbar__link">Service</a></li>
+                        <li><a href="#" class="navbar__link">Contact</a></li>
+                        <li><a href="#" class="navbar__link">Sign In</a></li>
+                        <li><a href="#" class="navbar__btn">Try it Free</a></li>
+                    </ul>
+
+                    <label for="nav-toggle" class="icon-burger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </label>
+                </nav>
             </div>
         </div>
 
@@ -87,7 +94,10 @@
                     <div class="flex-box">
                         <div class="left-box">
                             <div class="cta__img">
-                                <img src="img/cta-image-min.png" alt="Team cooperation" />
+                                <img
+                                    src="img/cta-image-min.png"
+                                    alt="Team cooperation"
+                                />
                             </div>
                         </div>
                         <div class="right-box">
@@ -107,11 +117,26 @@
 
                             <div class="cta__rating">
                                 <div class="cta__rating-imgs">
-                                    <img src="/img/star-yellow.svg" alt="star" />
-                                    <img src="/img/star-yellow.svg" alt="star" />
-                                    <img src="/img/star-yellow.svg" alt="star" />
-                                    <img src="/img/star-yellow.svg" alt="star" />
-                                    <img src="/img/star-yellow.svg" alt="star" />
+                                    <img
+                                        src="/img/star-yellow.svg"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="/img/star-yellow.svg"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="/img/star-yellow.svg"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="/img/star-yellow.svg"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="/img/star-yellow.svg"
+                                        alt="star"
+                                    />
                                 </div>
                                 <div class="cta__rating-text">
                                     <span>5,200 businesses</span>
@@ -125,14 +150,13 @@
             </div>
         </section>
 
-
         <footer class="footer">
-            <div class="container ">
+            <div class="container">
                 <div class="space-top-bottom">
                     <div class="flex-box">
                         <div class="footer-column first">
                             <div class="footer__logo">
-                                <img src="img/logo-footer.png" alt="Logo">
+                                <img src="img/logo-footer.png" alt="Logo" />
                             </div>
                             <div class="footer__slogan">
                                 The last team chat you will ever need.
@@ -149,7 +173,9 @@
                         <div class="footer-column">
                             <div class="footer__heading">Features</div>
                             <a href="#" class="footer__link">Screen Sharing</a>
-                            <a href="#" class="footer__link">IOS & Android Apps</a>
+                            <a href="#" class="footer__link"
+                                >IOS & Android Apps</a
+                            >
                             <a href="#" class="footer__link">File Sharing</a>
                             <a href="#" class="footer__link">User Management</a>
                         </div>
@@ -161,20 +187,23 @@
                         </div>
                         <div class="footer-column">
                             <div class="footer__heading">Contact Us</div>
-                            <a href="#" class="footer__link">info@chatapp.com</a>
+                            <a href="#" class="footer__link"
+                                >info@chatapp.com</a
+                            >
                             <a href="#" class="footer__link">1-800-200-300</a>
-                            <a href="#" class="footer__link">3500 Deer Creek rd, Palo Alto, CA</a>
+                            <a href="#" class="footer__link"
+                                >3500 Deer Creek rd, Palo Alto, CA</a
+                            >
                         </div>
-    
                     </div>
-
                 </div>
                 <div class="copy-right">
                     <span>©</span>
                     Copyright ChatApp Inc.
                 </div>
-
             </div>
         </footer>
+
+        <script src="js/script.js"></script>
     </body>
 </html>

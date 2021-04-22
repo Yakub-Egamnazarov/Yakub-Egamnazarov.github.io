@@ -8,6 +8,12 @@
         align-items: start;
         justify-content: start;
 
+        @include respond(tab-port) {
+            width: 90%;
+            align-items: center;
+            margin: 1rem 1.5rem;
+        }
+
         & .first {
             margin: 0 1.5rem 0 0;
         }
@@ -15,6 +21,11 @@
 
     &__logo {
         width: 100%;
+
+        @include respond(tab-port) {
+            width: 90%;
+            text-align: center;
+        }
     }
 
     &__slogan {
@@ -42,5 +53,10 @@
         text-align: left;
         margin-top: 10rem;
         padding-bottom: 2rem;
+
+        @include respond(tab-port) {
+            margin-top: 5rem;
+            text-align: center;
+        }
     }
 }

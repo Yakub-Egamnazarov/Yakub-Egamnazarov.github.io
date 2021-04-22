@@ -3,6 +3,21 @@
     // height: 80vh;
 
     background-color: $color-primary;
+    margin-top: 9rem;
+
+    & .left-box {
+        opacity: 0;
+        animation: moveInFromLeft .6s ease-out .1s;
+        animation-fill-mode: forwards;
+    }
+    
+    & .right-box {
+        opacity: 0;
+        animation: moveInFromRight .6s ease-out .1s;
+        animation-fill-mode: forwards;
+    }
+
+
 
     &__btn-box {
         display: flex;
@@ -10,6 +25,14 @@
         justify-content: start;
         margin-top: 6rem;
         margin-bottom: 1rem;
+
+        @include respond(phone-land) {
+            justify-content: center;
+            margin-top: 4rem;
+        }
+        @include respond(phone-port) {
+            margin-top: 3rem;
+        }
     }
 
     &__img {

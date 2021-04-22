@@ -1,6 +1,16 @@
 .space-top-bottom {
     padding-top: 9rem;
     padding-bottom: 9rem;
+
+    @include respond(tab-land) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    @include respond(phone-land) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
 }
 
 .space-left-middle {

@@ -31,4 +31,19 @@
 
 .footer .flex-box {
     align-items: start;
+
+    @include respond(tab-port) {
+        align-items: center;
+    }
+}
+
+@include respond(tab-port) {
+    .flex-box {
+        flex-direction: column;
+
+        & .left-box {
+            margin-right: 0;
+            margin-bottom: 4rem;
+        }
+    }
 }
