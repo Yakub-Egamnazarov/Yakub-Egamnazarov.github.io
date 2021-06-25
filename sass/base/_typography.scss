@@ -1,126 +1,102 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap");
-
 body {
-    font-family: "Roboto", sans-serif;
-    // font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
-    line-height: 160%;
+    line-height: 2rem;
+    color: $color-black;
 }
 
-.navbar__link {
-    font-size: 14px;
-    line-height: 110%;
+a {
+    text-decoration: none;
+    font-size: 1.8rem;
     font-weight: 700;
-    text-align: center;
-    text-decoration: none;
+    line-height: 2rem;
+    letter-spacing: .02em;
 }
 
-.navbar__btn {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 110%;
-    text-decoration: none;
+.heading-primary {
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 5.6rem;
+    letter-spacing: .03em
 }
 
-.section-hero {
-    &__title {
-        font-family: "Poppins", sans-serif;
+.text-primary {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    letter-spacing: .02em;
+    color: $color-grey-dark;
+}
+
+.hero__text {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    letter-spacing: -0.015px;
+    color: $color-white;
+}
+
+.hero__heading {
+    font-weight: 600;
+    font-size: 5.8rem;
+    line-height: 6rem;
+    color: $color-white;
+    text-shadow: 0 2px 20px rgba($color-grey, 0.2);
+}
+
+.hero__link {
+    a {
         color: $color-white;
-        font-size: 7.2rem;
-        line-height: 8rem;
-        font-weight: 700;
-        letter-spacing: 0.5rem;
-
-        @include respond(phone-land) {
-            text-align: center;
-        }
-
-        @include respond(phone-port) {
-            font-size: 6rem;
-            line-height: 7rem;
-            letter-spacing: 0.3rem;
-        }
-    }
-
-    &__text {
-        margin: 12px 0;
-        color: white;
-        font-size: 2.2rem;
-        line-height: 110%;
-
-        @include respond(phone-land) {
-            text-align: center;
-        }
-    }
-}
-
-.section {
-    &__title {
-        font-family: "Poppins", sans-serif;
-        font-weight: 600;
-        font-size: 4.8rem;
-        line-height: 5.5rem;
-        text-align: center;
-        color: $color-grey-dark;
-
-        @include respond(phone-port) {
-            font-size: 4rem;
-            line-height: 5rem;
-        }
-    }
-
-    &__text {
         font-size: 1.8rem;
-        line-height: 2.6rem;
-        font-weight: 400;
+        line-height: 2rem;
+        letter-spacing: -0.015px;
+    }
+}
+
+.section-partners {
+    .text-primary {
         text-align: center;
-        color: $color-grey;
     }
 }
 
-.cta {
-    & .section__title {
-        font-size: 4.4rem;
-        line-height: 120%;
-        letter-spacing: 0%;
-        text-align: left;
-
-        @include respond(tab-port) {
-            font-size: 4rem;
-            text-align: center;
-        }
-    }
-
-    & .section__text {
-        text-align: left;
-        line-height: 160%;
-
-        @include respond(tab-port) {
-            text-align: center;
-        }
-    }
+.btn-text {
+    color: $color-black;
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: .02em;
 }
 
-.footer {
-    &__slogan {
-        font-size: 1.6rem;
-        font-weight: 400;
-        line-height: 130%;
-        letter-spacing: 1px;
-    }
+.footer-message__text {
+    color: $color-grey-light;
+    font-size: 2rem;
+    line-height: 2.5rem;
 
-    &__heading {
-        font-family: "Poppins", sans-serif;
-        font-size: 1.8rem;
-        font-weight: 700;
-        line-height: 110%;
-        text-align: left;
-    }
+}
+.btn-submit {
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: .02em;
 
-    &__link {
-        font-size: 1.3rem;
-        line-height: 110%;
-        text-decoration: none;
+    cursor: pointer;
+}
+
+.contact__text {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: .5px;
+}
+
+.footer__link {
+
+    font-size: 1.6rem;
+    line-height: 2rem;
+
+}
+
+.copyright-box {
+    font-size: 1.6rem;
+    line-height: 2rem;
+
+    .copyright__icon {
+        font-size: 2rem;
     }
 }

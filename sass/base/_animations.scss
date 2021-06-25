@@ -1,47 +1,64 @@
-@keyframes moveInFromTop {
+@keyframes background-increase {
+    // 0% {
+    //     opacity: 0;
+    //     transform: translateX(100%);
+    // }
+
     0% {
-        opacity: 0;
-        transform: translateY(-10rem);
+        opacity: 1;
+        transform: none;
     }
 
     100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: scale(1.1) rotate(-1deg);
     }
 }
 
-@keyframes moveInFromLeft {
+@keyframes bg-fade-in-right {
     0% {
         opacity: 0;
-        transform: translateX(-20rem);
+        // transform: scale(0);
     }
 
     100% {
         opacity: 1;
-        transform: translateX(0);
+        // transform: none;
     }
 }
 
-@keyframes moveInFromRight {
+@keyframes fade-in-left {
     0% {
         opacity: 0;
-        transform: translateX(20rem);
+        transform: translateX(-10%);
     }
 
     100% {
         opacity: 1;
-        transform: translateX(0);
+        transform: none;
     }
 }
 
-@keyframes moveInFromBottom {
+@keyframes fade-in-bottom {
     0% {
         opacity: 0;
-        transform: translateY(10rem);
+        transform: translateY(100%);
     }
 
     100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: none;
+    }
+}
+
+@keyframes activity-line-anim {
+    0% {
+        opacity: 1;
+        transform: translateX(-90%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
     }
 }
